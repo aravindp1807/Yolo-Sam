@@ -1,0 +1,3 @@
+# military_
+
+Project initialized.
