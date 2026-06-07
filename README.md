@@ -85,6 +85,4 @@ create_ui()
 | **Image** | Click **"Upload Image"** → select file → results display automatically |
 | **Video** | Click **"Upload Video"** → select file → processing runs frame-by-frame → download link appears |
 
-### 5. Download Results
-- **Images**: Annotated PNG with masks, boxes, and labels
-- **Videos**:
+
