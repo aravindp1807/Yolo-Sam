@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Project-specific ignores
+# YOLO / SAM models (exclude large weight files)
+*.pt
+*.onnx
+*.engine
+
+# Exclude local media files and outputs but keep folder placeholders
+data/uploads/*
+!data/uploads/.gitkeep
+data/outputs/*
+!data/outputs/.gitkeep

@@ -278,26 +278,34 @@ Workflow:
 # 📂 Project Structure
 
 ```text
-YOLO-SAM/
+MILITARY_CODE/
 │
-├── notebooks/
-│   └── yolo_sam_pipeline.ipynb
+├── docs/                      # Preserved documentation folder
+│   ├── architecture.md
+│   ├── deployment.md
+│   └── training.md
 │
-├── models/
-│   ├── yolo/
-│   └── sam/
+├── notebooks/                 # Jupyter Notebooks folder
+│   └── yolo_sam_pipeline.ipynb # Interactive Colab UI notebook
 │
-├── outputs/
-│   ├── images/
-│   └── videos/
+├── src/                       # Core python source code package
+│   ├── __init__.py
+│   ├── processor.py           # Clean, modular ImageProcessor class (framework-agnostic)
+│   └── colab_ui.py            # ipywidgets GUI code for Google Colab
 │
-├── assets/
-│   ├── screenshots/
-│   └── examples/
+├── stages/                    # Archive folder for step-by-step history files
+│   ├── stage_01.py
+│   ├── ...
+│   └── stage_33.py
 │
-├── requirements.txt
-├── README.md
-└── LICENSE
+├── data/                      # Local data directory (ignored by git, folders remain as placeholders)
+│   ├── models/                # Folder for model weight files (.pt)
+│   ├── uploads/               # Temporary uploads folder
+│   └── outputs/               # Rendered image/video outputs folder
+│
+├── .gitignore                 # Standard Python gitignore rules
+├── requirements.txt           # Fixed, valid PyPI dependencies list
+└── README.md                  # Project documentation
 ```
 
 ---
